@@ -1,9 +1,9 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import pageNameReducer from "../components/page-name-edit/page-name-slice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    pageName: pageNameReducer,
   },
 });
 
